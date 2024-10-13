@@ -121,7 +121,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    // Smooth Scrolling
+    
     document.querySelectorAll('a.nav-link').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -135,7 +135,7 @@
         });
     });
 
-    // Scroll to Top Button
+    
     const scrollToTopBtn = document.querySelector('.scrollToTop');
     scrollToTopBtn.style.display = 'none'; // Initially hidden
 
@@ -154,20 +154,7 @@
         });
     });
 
-    // Skill Progress Animation
-    const skillsSection = document.querySelector('#skills');
-    const progressBars = document.querySelectorAll('.progress-bar');
-
-    window.addEventListener('scroll', () => {
-        const sectionPosition = skillsSection.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
-
-        if (sectionPosition < screenPosition) {
-            progressBars.forEach(bar => {
-                bar.style.width = bar.getAttribute('role') === 'progressbar' ? bar.style.width : '0';
-            });
-        }
-    });
+    
 </script>
 </body>
 </html>
