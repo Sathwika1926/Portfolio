@@ -1,121 +1,41 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-.container {
-    flex: 1;
+h3, h4 {
+    font-weight: 600;
+    color: #004d40;
 }
 
-footer {
-    background-color: #343a40;
+p {
+    font-size: 1.1rem;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.circle {
+    border: 5px solid #004d40;
+}
+
+.nav-wrapper {
+    padding: 0 20px;
+}
+
+.sidenav {
+    background-color: #004d40;
+}
+
+.sidenav a {
     color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    width: 100%;
-    font-size: 0.9rem;
 }
 
-.navbar {
-    margin-bottom: 20px;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.nav-link {
-    font-size: 1rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    position: relative;
-    text-align: center;
-}
-
-h2::after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 60px;
-    background: #007bff;
-    margin: 10px auto 0;
-}
-
-.skills-section .progress {
-    height: 30px;
-    margin-bottom: 1rem;
-    border-radius: 20px;
-    background-color: #e9ecef;
-}
-
-.progress-bar {
-    border-radius: 20px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.img-fluid {
-    border-radius: 0.5rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.bg-light {
-    background-color: #f8f9fa;
-}
-
-.py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
+.collection-item {
     font-size: 1.2rem;
-    margin: 0.5rem 0;
 }
 
-.scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 15px;
-    cursor: pointer;
-    display: none; /* Initially hidden */
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-.scrollToTop:hover {
-    background-color: #0056b3;
-}
-
-.content p {
-    font-style: italic;
-    color: #777;
-    text-align: center;
-    margin: 1rem 0;
+.page-footer {
+    padding: 20px 0;
 }

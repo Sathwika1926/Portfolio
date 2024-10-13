@@ -1,160 +1,135 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Sathwika's Portfolio</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <a class="navbar-brand font-weight-bold" href="#">Sathwika</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#self-introduction">Self Introduction</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education Qualifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skill Set</a></li>
-            <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-            <li class="nav-item"><a class="nav-link" href="#participations">Key Participations</a></li>
-            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Info</a></li>
-        </ul>
-    </div>
-</nav>
+<header>
+    <nav class="nav-wrapper teal lighten-2">
+        <div class="container">
+            <a href="#" class="brand-logo">Sathwika</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#participations">Key Activities</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#intro">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#participations">Key Activities</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
 
-<main class="container my-5">
-    <section id="self-introduction" class="py-5">
-        <h2>Self Introduction</h2>
-        <div class="text-center mb-4">
-            <img src="/media/profile-pic.png" alt="Sathwika" class="img-fluid rounded-circle" style="width: 320px; height: 320px;">
-            <ul class="mt-3">
-                <li>Passionate second-year B.Tech CSIT student at AITAM Tekali.</li>
-                <li>Strong interest in coding and web development.</li>
-                <li>Loves to explore new technologies.</li>
+<main>
+    <!-- Intro Section -->
+    <section id="intro" class="section container center-align">
+        <img src="media/profile-pic.png" alt="Sathwika" class="circle responsive-img" style="width: 250px; height: 250px;">
+        <h3 class="light">Hello, I'm Sathwika!</h3>
+        <p>A passionate B.Tech CSIT student with a deep interest in coding and web development. I love experimenting with new technologies and creating meaningful web experiences.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section teal lighten-5">
+        <div class="container">
+            <h4 class="center-align">Education</h4>
+            <ul class="collection">
+                <li class="collection-item">B.Tech in CSIT, AITAM Tekali (2022 - 2027)</li>
+                <li class="collection-item">Intermediate, Sri Chaitanya College</li>
+                <li class="collection-item">High School, Narayana School</li>
             </ul>
         </div>
     </section>
 
-    <section id="education" class="py-5 bg-light rounded">
-        <h2>Education Qualifications</h2>
-        <ul>
-            <li>B.Tech in Computer Science and Information Technology at AITAM Tekali (Expected graduation: 2027).</li>
-            <li>Intermediate education at Sri Chaitanya.</li>
-            <li>Schooling at Narayana School.</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="py-5">
-        <h2>Skill Set</h2>
-        <div class="skills-section">
-            <div class="progress mb-3">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">HTML - 80%</div>
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+        <h4 class="center-align">Skills</h4>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Web Development</span>
+                        <p>Experienced in building dynamic web applications using HTML, JavaScript, and CSS frameworks.</p>
+                    </div>
+                </div>
             </div>
-            <div class="progress mb-3">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;">JavaScript - 75%</div>
-            </div>
-            <div class="progress mb-3">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;">Python - 70%</div>
-            </div>
-            <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;">DBMS - 65%</div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Programming</span>
+                        <p>Proficient in Python for scripting and problem-solving. Also familiar with SQL for database management.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="achievements" class="py-5 bg-light rounded">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Currently, I have no specific achievements to list.</li>
-            <li>Actively working on improving skills and participating in various competitions.</li>
-        </ul>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section teal lighten-5">
+        <div class="container">
+            <h4 class="center-align">Achievements</h4>
+            <p class="center-align">Currently honing my skills and preparing to participate in competitive challenges and hackathons.</p>
+        </div>
     </section>
 
-    <section id="participations" class="py-5">
-        <h2>Key Participations</h2>
-        <ul>
-            <li>Looking forward to participating in future events and hackathons.</li>
-            <li>Aiming to enhance my experience and contribute to my community.</li>
-        </ul>
+    <!-- Key Participations Section -->
+    <section id="participations" class="section container">
+        <h4 class="center-align">Key Activities</h4>
+        <p>While I haven't had major participations yet, I am eager to contribute to team projects and make an impact through coding.</p>
     </section>
 
-    <section id="certifications" class="py-5 bg-light rounded">
-        <h2>Certifications</h2>
-        <ul class="list-unstyled">
-            <li>📜 Foundations of Front-End Web Development - Udemy <a href="https://www.udemy.com/course/foundations-of-front-end-development/" class="btn btn-sm btn-link" target="_blank">View Certification</a></li>
-        </ul>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section teal lighten-5">
+        <div class="container">
+            <h4 class="center-align">Certifications</h4>
+            <ul class="collection">
+                <li class="collection-item">Front-End Web Development - Udemy <a href="#" class="right">View Certificate</a></li>
+            </ul>
+        </div>
     </section>
 
-    <section id="hobbies" class="py-5">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Watching TV shows.</li>
-            <li>Modeling.</li>
-            <li>Traveling to explore different cultures.</li>
-        </ul>
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section container">
+        <h4 class="center-align">Hobbies</h4>
+        <p>I love to relax by watching my favorite TV shows, exploring new places through travel, and trying out modeling as a fun hobby!</p>
     </section>
 
-    <section id="contact" class="py-5 bg-light rounded">
-        <h2>Contact Info</h2>
-        <ul>
-            <li>Email: <a href="mailto:23a51a1277@adityatekkali.edu.in">23a51a1277@adityatekkali.edu.in</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/sathwika19/" target="_blank">sathwika19</a></li>
-            <li>GitHub: <a href="https://github.com/Sathwika1926" target="_blank">Sathwika1926</a></li>
-        </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="section teal lighten-5">
+        <div class="container center-align">
+            <h4>Contact Me</h4>
+            <ul class="collection">
+                <li class="collection-item">Email: <a href="mailto:23a51a1277@adityatekkali.edu.in">23a51a1277@adityatekkali.edu.in</a></li>
+                <li class="collection-item">GitHub: <a href="https://github.com/Sathwika1926" target="_blank">Sathwika1926</a></li>
+                <li class="collection-item">LinkedIn: <a href="https://linkedin.com/in/sathwika19" target="_blank">sathwika19</a></li>
+            </ul>
+        </div>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 Sathwika. All Rights Reserved.</p>
+<footer class="page-footer teal lighten-2 center-align">
+    <div class="container">&copy; 2024 Sathwika. All Rights Reserved.</div>
 </footer>
 
-<button class="scrollToTop">↑</button>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    
-    document.querySelectorAll('a.nav-link').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    
-    const scrollToTopBtn = document.querySelector('.scrollToTop');
-    scrollToTopBtn.style.display = 'none'; // Initially hidden
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollToTopBtn.style.display = 'block';
-        } else {
-            scrollToTopBtn.style.display = 'none';
-        }
-    });
-
-    scrollToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
