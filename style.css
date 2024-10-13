@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    position: relative;
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: #007bff;
+    margin: 10px auto 0;
+}
+
+.skills-section .progress {
+    height: 30px;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.img-fluid {
+    border-radius: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+video {
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+}
+
+.content p {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    margin: 1rem 0;
+}
