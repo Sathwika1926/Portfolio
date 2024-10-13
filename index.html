@@ -29,19 +29,26 @@
     </div>
 </nav>
 
-<div class="container my-5">
+<main class="container my-5">
     <section id="self-introduction" class="py-5">
         <h2>Self Introduction</h2>
         <div class="text-center mb-4">
-            <img src="/media/imresizer-1728810333631.jpg" alt="sathwika" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
-            <p class="mt-3">Hello! I'm Sathwika, a passionate second-year B.Tech CSIT student at AITAM Tekali. I have a keen interest in coding and web development, and I love to explore new technologies.</p>
+            <img src="/media/profile-pic.png" alt="Sathwika" class="img-fluid rounded-circle" style="width: 320px; height: 320px;">
+            <ul class="mt-3">
+                <li>Passionate second-year B.Tech CSIT student at AITAM Tekali.</li>
+                <li>Strong interest in coding and web development.</li>
+                <li>Loves to explore new technologies.</li>
+            </ul>
         </div>
-
     </section>
 
     <section id="education" class="py-5 bg-light rounded">
         <h2>Education Qualifications</h2>
-        <p>Currently pursuing B.Tech in Computer Science and Information Technology at AITAM Tekali, expected graduation in 2027. I completed my intermediate education at Sri Chaitanya and my schooling at Narayana School.</p>
+        <ul>
+            <li>B.Tech in Computer Science and Information Technology at AITAM Tekali (Expected graduation: 2027).</li>
+            <li>Intermediate education at Sri Chaitanya.</li>
+            <li>Schooling at Narayana School.</li>
+        </ul>
     </section>
 
     <section id="skills" class="py-5">
@@ -51,60 +58,116 @@
                 <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">HTML - 80%</div>
             </div>
             <div class="progress mb-3">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;">JavaScript - 75%</div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;">JavaScript - 75%</div>
             </div>
             <div class="progress mb-3">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;">Python - 70%</div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;">Python - 70%</div>
             </div>
             <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;">DBMS - 65%</div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;">DBMS - 65%</div>
             </div>
         </div>
     </section>
 
     <section id="achievements" class="py-5 bg-light rounded">
         <h2>Achievements</h2>
-        <ul class="list-unstyled">
-        
-            <p>🏅 Currently, I have no specific achievements to list, but I am actively working on improving my skills and participating in various competitions.</p>
-            
+        <ul>
+            <li>Currently, I have no specific achievements to list.</li>
+            <li>Actively working on improving skills and participating in various competitions.</li>
         </ul>
     </section>
 
     <section id="participations" class="py-5">
         <h2>Key Participations</h2>
-        <ul class="list-unstyled">
-            <p>📅 I am looking forward to participating in future events and hackathons to enhance my experience and contribute to my community.</p>
-
+        <ul>
+            <li>Looking forward to participating in future events and hackathons.</li>
+            <li>Aiming to enhance my experience and contribute to my community.</li>
         </ul>
     </section>
 
     <section id="certifications" class="py-5 bg-light rounded">
         <h2>Certifications</h2>
         <ul class="list-unstyled">
-            <li>📜 Foundations of Front-End Web Development - Udemy <a href="https://www.udemy.com/course/foundations-of-front-end-development/" class="btn btn-sm btn-link">View</a></li>
+            <li>📜 Foundations of Front-End Web Development - Udemy <a href="https://www.udemy.com/course/foundations-of-front-end-development/" class="btn btn-sm btn-link" target="_blank">View Certification</a></li>
         </ul>
     </section>
 
     <section id="hobbies" class="py-5">
         <h2>Hobbies</h2>
-        <p>In my free time, I enjoy watching TV shows, modeling, and traveling to new places to explore different cultures.</p>
+        <ul>
+            <li>Watching TV shows.</li>
+            <li>Modeling.</li>
+            <li>Traveling to explore different cultures.</li>
+        </ul>
     </section>
 
     <section id="contact" class="py-5 bg-light rounded">
         <h2>Contact Info</h2>
-        <p>Email: <a href="mailto:23a51a1277@adityatekkali.edu.in">23a51a1277@adityatekkali.edu.in</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sathwika19/" target="_blank">sathwika19</a></p>
-        <p>GitHub: <a href="https://github.com/Sathwika1926" target="_blank">Sathwika1926</a></p>
+        <ul>
+            <li>Email: <a href="mailto:23a51a1277@adityatekkali.edu.in">23a51a1277@adityatekkali.edu.in</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/sathwika19/" target="_blank">sathwika19</a></li>
+            <li>GitHub: <a href="https://github.com/Sathwika1926" target="_blank">Sathwika1926</a></li>
+        </ul>
     </section>
-</div>
+</main>
 
 <footer>
     <p>&copy; 2024 Sathwika. All Rights Reserved.</p>
 </footer>
 
+<button class="scrollToTop">↑</button>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Smooth Scrolling
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.querySelector('.scrollToTop');
+    scrollToTopBtn.style.display = 'none'; // Initially hidden
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Skill Progress Animation
+    const skillsSection = document.querySelector('#skills');
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    window.addEventListener('scroll', () => {
+        const sectionPosition = skillsSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (sectionPosition < screenPosition) {
+            progressBars.forEach(bar => {
+                bar.style.width = bar.getAttribute('role') === 'progressbar' ? bar.style.width : '0';
+            });
+        }
+    });
+</script>
 </body>
 </html>
