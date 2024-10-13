@@ -31,7 +31,7 @@ Go to the project directory
 Change the content
 
 ```bash
-  in index.js and media
+  both index.html and media folder
 ```
 
 Run the webpage
